@@ -1,0 +1,128 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+      "ctrl-h": "editor::MoveLeft",
+      "ctrl-j": "editor::MoveDown",
+      "ctrl-k": "editor::MoveUp",
+      "ctrl-l": "editor::MoveRight",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space p": "file_finder::Toggle",
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd",
+      "space o": "projects::OpenRecent",
+      "space q q": "pane::CloseActiveItem",
+      "space q o": "pane::CloseOtherItems",
+      "space e": "pane::RevealInProjectPanel",
+      "U": "editor::Redo",
+    },
+  },
+  {
+    "context": "menu",
+    "bindings": {
+      "ctrl-n": "menu::SelectNext",
+      "ctrl-p": "menu::SelectPrevious",
+      "ctrl-y": "menu::Confirm",
+    },
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-n": "editor::ContextMenuNext",
+      "ctrl-p": "editor::ContextMenuPrevious",
+      "ctrl-y": "editor::ConfirmCompletion",
+    },
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-7": ["pane::ActivateItem", 6],
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "alt-7": ["workspace::ActivatePane", 6],
+    },
+  },
+  {
+    "context": "OutlinePanel",
+    "bindings": {
+      "alt-4": "workspace::CloseActiveDock",
+    },
+  },
+  {
+    "context": "OutlinePanel",
+    "unbind": {
+      "alt-7": "workspace::CloseActiveDock",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-4": "outline_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-7": "outline_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-4": "outline_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "alt-7": "outline_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Workspace || Editor",
+    "bindings": {
+      "alt-7": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Workspace || Editor",
+    "unbind": {
+      "alt-f12": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-7": "workspace::CloseActiveDock",
+    },
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "alt-f12": "workspace::CloseActiveDock",
+    },
+  },
+]
