@@ -39,6 +39,15 @@
       "space q o": "pane::CloseOtherItems",
       "space e": "pane::RevealInProjectPanel",
       "U": "editor::Redo",
+      "ctrl-j": "editor::MoveLineDown",
+      "ctrl-k": "editor::MoveLineUp",
+    },
+  },
+  {
+    "context": "VisualMode && !menu",
+    "bindings": {
+      "ctrl-j": "editor::MoveLineDown",
+      "ctrl-k": "editor::MoveLineUp",
     },
   },
   {

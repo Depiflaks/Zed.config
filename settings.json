@@ -17,6 +17,17 @@
   "vim": {
     "toggle_relative_line_numbers": true,
   },
+  "tabs": {
+    "git_status": true,
+    "show_diagnostics": "all",
+    "file_icons": true,
+  },
+  "minimap": {
+    "show": "always",
+    "display_in": "all_editors",
+    "current_line_highlight": "line",
+    "max_width_columns": 100,
+  },
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
