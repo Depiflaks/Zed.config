@@ -21,9 +21,10 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "dark",
-    "light": "Catppuccin Frappé - No Italics",
-    "dark": "Dracula Solid",
+    "light": "Ayu Light",
+    "dark": "Gruvbox Dark",
   },
+  "icon_theme": "Catppuccin Mocha",
   "languages": {
     "Go": {
       "format_on_save": "on",

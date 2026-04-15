@@ -27,14 +27,37 @@
     "bindings": {
       "space p": "file_finder::Toggle",
       "w": "vim::NextSubwordStart",
+      "W": "vim::NextWordStart",
       "b": "vim::PreviousSubwordStart",
+      "B": "vim::PreviousWordStart",
       "e": "vim::NextSubwordEnd",
+      "E": "vim::NextWordEnd",
       "g e": "vim::PreviousSubwordEnd",
+      "g E": "vim::PreviousWordEnd",
       "space o": "projects::OpenRecent",
       "space q q": "pane::CloseActiveItem",
       "space q o": "pane::CloseOtherItems",
       "space e": "pane::RevealInProjectPanel",
       "U": "editor::Redo",
+    },
+  },
+  {
+    "context": "vim_operator == a || vim_operator == i",
+    "bindings": {
+      "w": "vim::Subword",
+      "W": "vim::Word",
+    },
+  },
+  {
+    "context": "Editor && mode == single_line",
+    "bindings": {
+      "ctrl-h": "editor::MoveLeft",
+      "ctrl-l": "editor::MoveRight",
+      "ctrl-k": "editor::MoveToBeginningOfLine",
+      "ctrl-j": "editor::MoveToEndOfLine",
+      "alt-h": "editor::MoveToPreviousSubwordStart",
+      "alt-l": "editor::MoveToNextSubwordEnd",
+      "ctrl-w": "editor::DeleteToPreviousSubwordStart",
     },
   },
   {
