@@ -13,6 +13,13 @@
     },
   },
   {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space l r": "editor::RestartLanguageServer",
+      "space c p": "workspace::CopyPath"
+    },
+  },
+  {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore"
