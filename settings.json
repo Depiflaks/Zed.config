@@ -24,6 +24,24 @@
   "git_panel": {
     "dock": "left"
   },
+  "lsp_document_colors": "background",
+  "lsp": {
+    "todo-highlight-lsp": {
+      "initialization_options": {
+        "highlights": {
+          "TODO": {
+            "background": "#81ff81"
+          },
+          "FIXME": {
+            "background": "#ffff81"
+          },
+          "BUG": {
+            "background": "#ff8181"
+          }
+        },
+      },
+    },
+  },
   "auto_update": false,
   "base_keymap": "JetBrains",
   "autosave": {
@@ -31,7 +49,7 @@
       "milliseconds": 1000,
     },
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true,
   },
