@@ -8,40 +8,23 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "lsp_document_colors": "background",
-  "lsp": {
-    "todo-highlight-lsp": {
-      "initialization_options": {
-        "highlights": {
-          "TODO": {
-            "background": "#81ff81"
-          },
-          "FIXME": {
-            "background": "#ffff81"
-          },
-          "BUG": {
-            "background": "#ff8181"
-          }
-        },
-      },
-    },
-  },
   "auto_update": false,
   "base_keymap": "JetBrains",
   "autosave": {
@@ -49,7 +32,7 @@
       "milliseconds": 1000,
     },
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true,
   },
@@ -69,9 +52,9 @@
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Gruvbox Dark",
+    "dark": "JetBrains New Dark",
   },
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Catppuccin Macchiato",
   "hide_mouse": "on_typing_and_movement",
   "languages": {
     "Go": {
@@ -79,6 +62,9 @@
       "code_actions_on_format": {
         "source.organizeImports": true,
       },
+    },
+    "Python": {
+      "language_servers": ["ty", "!basedpyright", "..."],
     },
   },
 }
