@@ -14,6 +14,7 @@
       "ctrl-q j": "workspace::ActivatePaneDown",
       "ctrl-q k": "workspace::ActivatePaneUp",
       "ctrl-q l": "workspace::ActivatePaneRight",
+      // "space c": "workspace::ActivatePane",
     },
   },
   {
@@ -23,6 +24,13 @@
       "space c p": "workspace::CopyPath",
       "space c r": "workspace::CopyRelativePath",
       "shift-z z": ["workspace::SendKeystrokes", ":wq\n"],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space b": "git::Branch",
+      "space d": "git::Diff",
     },
   },
   {
@@ -110,7 +118,8 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space p": "file_finder::Toggle",
+      "space s": "file_finder::Toggle",
+      "space f": "pane::DeploySearch",
       "w": "vim::NextSubwordStart",
       "W": "vim::NextWordStart",
       "b": "vim::PreviousSubwordStart",
