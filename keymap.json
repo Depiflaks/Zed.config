@@ -69,7 +69,6 @@
       "ь": ["workspace::SendKeystrokes", "m"],
       "б": ["workspace::SendKeystrokes", ","],
       "ю": ["workspace::SendKeystrokes", "."],
-      ".": ["workspace::SendKeystrokes", "/"],
 
       "shift-й": ["workspace::SendKeystrokes", "Q"],
       "shift-ц": ["workspace::SendKeystrokes", "W"],
