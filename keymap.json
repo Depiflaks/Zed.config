@@ -24,6 +24,7 @@
       "space c p": "workspace::CopyPath",
       "space c r": "workspace::CopyRelativePath",
       "shift-z z": ["workspace::SendKeystrokes", ":wq\n"],
+      "alt-enter": ["workspace::SendKeystrokes", "i enter escape"],
     },
   },
   {
@@ -31,6 +32,8 @@
     "bindings": {
       "space b": "git::Branch",
       "space d": "git::Diff",
+      "space a": "git::Blame",
+      "space f": "git::BranchDiff",
     },
   },
   {
