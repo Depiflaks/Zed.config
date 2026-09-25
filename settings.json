@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "proxy": "socks5h://localhost:10808",
   "cli_default_open_behavior": "new_window",
   "project_panel": {
     "dock": "left",
@@ -18,6 +19,7 @@
     "dock": "left",
   },
   "agent": {
+    "default_profile": "ask",
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
@@ -57,7 +59,7 @@
     "dark": "JetBrains New Dark",
   },
   "icon_theme": "Catppuccin Macchiato",
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "languages": {
     "Go": {
       "format_on_save": "on",

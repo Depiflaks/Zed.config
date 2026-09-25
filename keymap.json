@@ -255,4 +255,16 @@
       "alt-f12": "workspace::CloseActiveDock",
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-8": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-b": "workspace::ToggleRightDock"
+    }
+  }
 ]
