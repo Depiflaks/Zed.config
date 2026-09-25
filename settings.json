@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "proxy": "proxy01.ispring.lan",
+  "proxy": "socks5h://localhost:10808",
   "project_panel": {
     "dock": "left",
   },
@@ -18,6 +18,13 @@
     "dock": "left",
   },
   "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "effort": "medium",
+      "provider": "openai",
+      "model": "gpt-5.3-codex",
+      "enable_thinking": false,
+    },
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
@@ -27,7 +34,7 @@
     "dock": "left",
   },
   "lsp_document_colors": "background",
-  "auto_update": false,
+  "auto_update": true,
   "base_keymap": "JetBrains",
   "autosave": {
     "after_delay": {
