@@ -18,6 +18,9 @@
     "dock": "left",
   },
   "agent": {
+    "sandbox_permissions": {
+      "write_paths": ["/home/smmm/projects/edu"],
+    },
     "default_profile": "write",
     "default_model": {
       "effort": "medium",
@@ -64,7 +67,7 @@
     "dark": "JetBrains New Dark",
   },
   "icon_theme": "Catppuccin Macchiato",
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "languages": {
     "Go": {
       "format_on_save": "on",
